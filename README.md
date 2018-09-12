@@ -15,15 +15,15 @@
  
  
  
- * [环境配置](#50)
-   * [hadoop2.7.3](#45)
-   * [spark2.3.0](#45)
-   * [hive2.3.2](#45)
-   * [hbase1.4.2](#45)
-   * [phoenix-4.14-hbase-1.4](#45)
+ ### 环境配置
+   * hadoop2.7.3
+   * spark2.3.0
+   * hive2.3.2 
+   * hbase1.4.2
+   * phoenix-4.14-hbase-1.4
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;本工程实例代码中侧重的是spark sql的使用，本质是通过操作hive表项来实现或进行后续的业务处理，hbase表统一通过phoenix的进行操作管理，但从sql的使用上来说，我们在philomel中想更少地或并不打算直接通过phoenix的api来对hbase中的数据进行操作，也想统一地通过操作hive表来完成，所以需要在hive中创建一个外部表来对已存在的hbase表进行映射，在实践过程中最好需要遵循以下2条的原则：
-   * [创建hbase:在phoenix shell](#45)
-   * [在hive中创建external table来映射hbase表](#45)
+ 1. 创建hbase:在phoenix shell
+ 2. 在hive中创建external table来映射hbase表
    
 可以参考[此记录](https://www.jianshu.com/p/09c30d2074d6)简单地了解在hive中创建映射phoenix hbase表项的操作步骤
