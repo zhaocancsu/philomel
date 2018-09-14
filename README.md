@@ -27,3 +27,13 @@
  2. 在hive中创建external table来映射hbase表
    
 可以参考[此记录](https://www.jianshu.com/p/09c30d2074d6)简单地了解在hive中创建映射phoenix hbase表项的操作步骤
+
+ ### 功能接口描述
+![接口](https://github.com/zhaocancsu/philomel/blob/master/rest.png)
+
+
+ ### 消息类型
+   * spark context创建消息(与功能接口同步)
+   * spark任务执行结果消息:异步通知任务执行结果
+   * 进程启动成功消息:通知位置信息(ip和port)给外部来作driver资源请求的负载均衡
+ 
