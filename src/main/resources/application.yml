@@ -1,0 +1,13 @@
+server:
+  # 端口
+  port: 8086
+
+swagger:
+  ui:
+    enable: true
+
+# 日志
+logging:
+  level: INFO
+
+
